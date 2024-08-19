@@ -1,0 +1,63 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background color */
+  padding: 1rem 2rem;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
+  border: none; /* Remove any border */
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Navbar brand styling */
+.navbar .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border: none; /* Ensure no border */
+}
+
+/* Navbar menu styling */
+.navbar .menu {
+  display: flex;
+  gap: 1.5rem;
+  border: none; /* Ensure no border */
+}
+
+/* Navbar menu item styling */
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  border: none; /* Ensure no border */
+}
+
+/* Hover effect for menu items */
+.navbar .menu a:hover {
+  color: #e7337c; /* Pink color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar .menu a {
+    font-size: 1.5rem; /* Larger text for better readability on small screens */
+  }
+}

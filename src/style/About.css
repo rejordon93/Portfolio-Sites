@@ -1,0 +1,94 @@
+/* Import Quicksand font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+/* Base font family */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* General animation for elements coming into view */
+.animate-in {
+  opacity: 1; /* Start with element invisible */
+  transform: translateY(20px); /* Start from slightly below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+/* Animation for elements coming into view */
+.animate-in.show {
+  opacity: 1; /* Make element visible */
+  transform: translateY(0); /* Move element to final position */
+}
+
+/* About section styles */
+.About_about_EJ {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  padding: 5rem 2rem; /* Add padding around the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styles */
+.About_about_heading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 6rem; /* Slightly reduced for better fit */
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 4rem; /* Space below the heading */
+  font-weight: bold; /* Consistent weight */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow for text */
+}
+
+/* Container for cards */
+.About_about_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1200px; /* Limit max width */
+  margin: 0 auto; /* Center container */
+}
+
+/* Individual card styles */
+.About_about_container_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 320px; /* Flex-basis for wider cards */
+  padding: 2rem; /* Padding inside each card */
+  border-radius: 10px; /* Rounded corners for cards */
+  background-color: #fff; /* White background for a clean look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the cards */
+.About_about_container_card:hover {
+  transform: translateY(-8px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow on hover */
+  background-color: #e7337c; /* Change background color on hover */
+  color: #fff; /* Change text color to white on hover */
+}
+
+/* Title styles */
+.About_about_Title {
+  color: #e7337c; /* Title color */
+  font-size: 2.5rem; /* Adjusted font size */
+  font-weight: bold; /* Bold text for titles */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+/* Paragraph styles */
+.About_about_p {
+  font-family: serif;
+  font-size: 1.4rem; /* Adjusted font size for readability */
+  font-weight: 600; /* Adjusted weight for better readability */
+  color: #555; /* Darker gray color for text */
+  line-height: 1.7; /* Improved line height for readability */
+  text-align: center; /* Centered text for a cleaner look */
+}

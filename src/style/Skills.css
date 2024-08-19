@@ -1,0 +1,118 @@
+/* Main container for the Skills section */
+.Skills_skills {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  padding: 5rem 2rem; /* Adjust padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.Skills_skills_title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333; /* Darker color for contrast */
+  text-align: center;
+  margin-bottom: 3rem; /* Space below the title */
+}
+
+/* Container for skill categories */
+.Skills_skills_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Space between categories */
+}
+
+/* Individual category styling */
+.Skills_skills_container_category {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Centering the category title */
+.Skills_skills_container_category_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e7337c; /* Vibrant color for category titles */
+  margin-bottom: 1rem; /* Space below category title */
+  text-align: center; /* Center-align the text */
+}
+
+/* Container for skill items within a category */
+.Skills_skills_container_category_skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between skill items */
+  justify-content: center; /* Center items within the container */
+}
+
+/* Individual skill item styling */
+.Skills_skills_container_category_skillsContainer_skill {
+  background: #ffffff; /* White background for skill boxes */
+  color: #333; /* Dark text color for contrast */
+  font-size: 1.8rem;
+  padding: 1rem; /* Padding for uniformity */
+  border-radius: 8px; /* Slightly rounded corners */
+  border: 2px solid #e7337c; /* Pink border to match the theme */
+  text-align: center; /* Center-align text */
+  flex: 1 1 150px; /* Allow flex items to grow and shrink with a base width */
+  max-width: 200px; /* Ensure skill boxes do not exceed this width */
+  transition: transform 0.4s ease, background-color 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for effects */
+  opacity: 0; /* Start with boxes invisible */
+  transform: translateY(
+    20px
+  ); /* Start with boxes slightly below their final position */
+  animation: fadeInUp 0.6s ease-out forwards; /* Apply the animation */
+}
+
+/* Animation for skill boxes coming into place */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start from 20px below the final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the final position */
+  }
+}
+
+/* Delay the animation for each skill box */
+.Skills_skills_container_category_skillsContainer_skill:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(5) {
+  animation-delay: 1s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.Skills_skills_container_category_skillsContainer_skill:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+/* Hover effects */
+.Skills_skills_container_category_skillsContainer_skill:hover {
+  background: #e7337c; /* Pink background on hover */
+  color: #ffffff; /* White text color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+  transform: translateY(-10px) scale(1.05); /* Lift and scale effect on hover */
+  border-color: #d61e6f; /* Darker pink border color on hover */
+}
