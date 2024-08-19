@@ -64,7 +64,7 @@
   color: #e7337c; /* Match the link color with card titles */
   text-decoration: none; /* Remove underline */
   margin: 0.2rem 0; /* Reduced margin for closer spacing */
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s eases;
 }
 
 .Contact_contact_container a:hover {
